@@ -15,7 +15,7 @@ import PostModel from './models/post';
 import PostController from './Controler/PostControler';
 const Post = new PostController();
 
-mongoose.connect('mongodb://localhost:27017/blogReact', {
+mongoose.connect('mongodb://localhost:8080/blogReact', {
   useUnifiedTopology: true,
   useNewUrlParser: true,
 });
