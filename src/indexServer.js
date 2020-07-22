@@ -7,6 +7,8 @@ const app = express();
 
 app.use(cors());
 
+const port = 8080;
+
 import mongoose from 'mongoose';
 
 import PostModel from './models/post';
@@ -31,6 +33,6 @@ app.delete('/posts/:id', Post.delete);
 
 app.put('/posts/:id', Post.update);
 
-app.listen(3333, () => {
+app.listen(8080, () => {
   console.log('start');
 });
